@@ -21,11 +21,6 @@ public class JsonUtils
     private static final Gson gson             = new GsonBuilder().create();
     private static final Gson gsonStatic       = new GsonBuilder().excludeFieldsWithModifiers(Modifier.TRANSIENT).create();
 
-    public static JsonElement parse(String json)
-    {
-        return parser.parse(json);
-    }
-
     public static <T> T fromFile(String file, Class<T> classOfT, boolean useStatic) throws Exception
     {
         return fromJson(Files.newBufferedReader(Paths.get(file), StandardCharsets.UTF_8), classOfT, useStatic);
@@ -75,6 +70,11 @@ public class JsonUtils
     }
 
     public static JsonElement parse(Reader json)
+    {
+        return parser.parse(json);
+    }
+
+    public static JsonElement parse(String json)
     {
         return parser.parse(json);
     }

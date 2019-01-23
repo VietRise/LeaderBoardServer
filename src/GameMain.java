@@ -1,4 +1,8 @@
 import common.ServiceInfo;
+import connection.http.HttpServer;
+import connection.tcp.TcpServer;
+import connection.udp.UdpMessageHandlerInitializer;
+import connection.udp.UdpServer;
 import db.DataAccess;
 import leaderboard.LeaderBoardManager;
 
@@ -10,6 +14,9 @@ public class GameMain
     public static final GameMain instance = new GameMain();
 
     public String serverID = "0";
+    public TcpServer tcpServer;
+    public UdpServer udpServer;
+    public HttpServer httpServer;
 
 
     private void initServer()
@@ -25,8 +32,11 @@ public class GameMain
         serverID = String.valueOf(siGame.sid);
 
         initServer();
-
         addShutdownHook();
+
+        tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
+        udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
+        httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
 
         System.out.printf("SERVICE_STATUS_RUNNING ...");
     }

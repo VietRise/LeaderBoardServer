@@ -44,4 +44,9 @@ public class ServiceInfo
     {
         ServiceInfo info = JsonUtils.fromFile(path, ServiceInfo.class, true);
     }
+
+    public static boolean has(String ip, int port)
+    {
+        return ip != null && ip.length() > 0 && port > 0;
+    }
 }
