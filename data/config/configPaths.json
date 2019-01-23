@@ -1,0 +1,14 @@
+{
+	"SERVICES":
+	{
+		"LOCAL"	: "services_local.json"
+	},
+	"DB":
+	{
+		"LOCAL"	: "db_local.json"
+	},
+	"REDIS":
+	{
+		"LOCAL"  : "redis_local.json"
+	}
+}

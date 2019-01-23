@@ -1,0 +1,11 @@
+{
+  "GAME_SERVICE": {
+    "SID": -1,
+    "TCP_IP": "127.0.0.1",
+    "TCP_PORT": 19123,
+    "UDP_IP": "127.0.0.1",
+    "UDP_PORT": 77,
+    "HTTP_IP": "127.0.0.1",
+    "HTTP_PORT": 19140
+  }
+}
