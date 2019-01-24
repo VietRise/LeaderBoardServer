@@ -51,9 +51,9 @@ public class GameMain
         }
         */
 
-        // tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
-        // udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
-        // httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
+         tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
+         udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
+         httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
 
         System.out.printf("SERVICE_STATUS_RUNNING ...");
     }
