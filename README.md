@@ -1,17 +1,3 @@
-Functionality
--------------
-Service Leaderboard
-- Allow user post score
-Example: 127.0.0.1:19140/postscore?userid=100001&score=120
-- Allow user change name
-Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
-- Get list user at top score
-Example:127.0.0.1:19140/postscore?topuser
-
-***Note***:
-You can use POSTMAN application to send http request
-Postman: https://www.getpostman.com/downloads/
-
 Main features
 -------------
    * Language: Java
@@ -48,3 +34,17 @@ Structure Project
 * run: contain file .bat run for window os, so don't need IDE to build, compile, run the application
 * src: contain source code of the application
 * tools: some tools is needed when running on local environment
+
+Functionality
+-------------
+Service Leaderboard
+- Allow user post score
+Example: 127.0.0.1:19140/postscore?userid=100001&score=120
+- Allow user change name
+Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
+- Get list user at top score
+Example:127.0.0.1:19140/topuser
+
+***Note***:
+You can use POSTMAN application to send http request
+Postman: https://www.getpostman.com/downloads/
