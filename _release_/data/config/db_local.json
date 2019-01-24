@@ -1,0 +1,19 @@
+{
+    "GAME_STATIC":
+	{
+		"name":	"static",
+		"pass":	"",
+		"url":	"http://127.0.0.1:8091/pools"
+    },
+    "USER_GAME_DATA":
+	{
+		"buckets":
+		[
+			{
+				"name":	"user_game_data",
+				"pass":	"",
+				"url":	"http://127.0.0.1:8091/pools"
+			}
+		]
+    }
+}

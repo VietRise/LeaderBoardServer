@@ -2,6 +2,7 @@ import common.ConfigPath;
 import common.ServiceInfo;
 
 import java.io.File;
+import java.util.Locale;
 
 /**
  * Created by MacBook on 1/23/19.
@@ -24,7 +25,6 @@ public class MainClass
                 redisOnLocal();
             }
             GameMain.instance.start();
-
         }
         catch (Exception ex)
         {
@@ -34,8 +34,9 @@ public class MainClass
 
     private static void redisOnLocal() throws Exception
     {
+        String OS = System.getProperty("os.name", "generic").toLowerCase(Locale.ENGLISH);
         // Run redis service on windows.
-        if (ServiceInfo.environment.isLocal())
+        if (ServiceInfo.environment.isLocal() && OS.indexOf("win") >= 0)
         {
             File dir = new File(".."+"/run");
             ProcessBuilder pb = new ProcessBuilder("cmd.exe", "/C", "START", "/B", "run_redis.bat");

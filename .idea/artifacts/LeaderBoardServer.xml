@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="LeaderBoardServer">
+    <output-path>$PROJECT_DIR$/_release_</output-path>
+    <root id="archive" name="LeaderBoardServer.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/_release_/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="LeaderBoardServer" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/gson-2.8.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jedis-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/jettison-1.3.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/commons-pool2-2.4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/netty-all-4.1.22.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-runtime.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$KOTLIN_BUNDLED$/lib/kotlin-reflect.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

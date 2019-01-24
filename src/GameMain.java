@@ -47,12 +47,12 @@ public class GameMain
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try
             {
-                System.out.printf("BCServer shutdown hook!!!");
+                System.out.println("BCServer shutdown hook!!!");
                 LeaderBoardManager.getInstance().stop();
             }
             catch (Exception ex)
             {
-                System.out.printf(ex.getMessage());
+                System.out.println(ex.getMessage());
             }
         }));
     }
