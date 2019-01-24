@@ -12,30 +12,21 @@ Build & Runtime Requirements
 
 How to run
 --------------------
-Using CMD on Window:
+Method1: Using CMD on Window:
 1) Edit file config.bat, edit the path of JDK according location on your computer
 (set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
 2) Open cmd, direct to folder LeaderBoardServer
 3) Use cmd for running file make.bat
-5) Use cmd for running file run.bat in folder LeaderBoardServer/run
+4) Use cmd for running file run.bat in folder LeaderBoardServer/run
 
-Using IDE
+OR
+
+Method2: Using IDE
 1) Edit file config.bat, edit the path of JDK according location on your computer
 (set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
 2) Open project with InteliJ IDEA
 3) Click build project
 4) Click Run or Debug project
-
-Structure Project
---------------------
-* _database: this folder was generated for saving data of user
-* _release_: this folder contain file jar after compiling the application
-* data: Contain file config for the application
-* libs: Contain libs which is essential for the application
-* out: this folder was generated automatically by IDE
-* run: contain file .bat run for window os, so don't need IDE to build, compile, run the application
-* src: contain source code of the application
-* tools: some tools is needed when running on local environment
 
 Functionality
 -------------
@@ -52,3 +43,14 @@ Example:127.0.0.1:19140/topuser
 ***Note***:
 You can use POSTMAN application to send http request
 Postman: https://www.getpostman.com/downloads/
+
+Structure Project
+--------------------
+* _database: this folder was generated for saving data of user
+* _release_: this folder contain file jar after compiling the application
+* data: Contain file config for the application
+* libs: Contain libs which is essential for the application
+* out: this folder was generated automatically by IDE
+* run: contain file .bat run for window os, so don't need IDE to build, compile, run the application
+* src: contain source code of the application
+* tools: some tools is needed when running on local environment

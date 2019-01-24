@@ -28,7 +28,7 @@ public class MainClass
         }
         catch (Exception ex)
         {
-            System.out.printf(ex.getMessage());
+            System.out.println(ex.getMessage());
         }
     }
 
@@ -42,6 +42,7 @@ public class MainClass
             ProcessBuilder pb = new ProcessBuilder("cmd.exe", "/C", "START", "/B", "run_redis.bat");
             pb.directory(dir);
             pb.start();
+            System.out.println("Run redis successful");
         }
     }
 }
