@@ -78,7 +78,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                 {
                     // Response leaderboard
                     HttpTopRank.getTopUser(response, clientIp);
-                    System.out.printf("Get top user successful");
+                    System.out.println("Get top user successful");
                 }
                 else if (getParams.containsKey(POST_SCORE_USER))
                 {
@@ -97,7 +97,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                             dataAccess.updateUserProfile(userID, userProfile, 0);
                             // Update leaderboard
                             LeaderBoardManager.getInstance().rankMember(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE, userID, score);
-                            System.out.printf("Post score user successful");
+                            System.out.println("Post score user successful");
                             // Response data
                             result = SUCCESS;
                             response.content().writeBytes(result.getBytes());
@@ -108,7 +108,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                         // Response data
                         result = FAIL;
                         response.content().writeBytes(result.getBytes());
-                        System.out.printf("This user isn't exist");
+                        System.out.println("This user isn't exist");
                     }
                 }
                 else if (getParams.containsKey(POST_UPDATE_USER))
@@ -125,14 +125,14 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                         // Data response
                         result = SUCCESS;
                         response.content().writeBytes(result.getBytes());
-                        System.out.printf("Update user successful");
+                        System.out.println("Update user successful");
                     }
                     else
                     {
                         // Response data
                         result = FAIL;
                         response.content().writeBytes(result.getBytes());
-                        System.out.printf("This user isn't exist");
+                        System.out.println("This user isn't exist");
                     }
                 }
                 ctx.writeAndFlush(response);

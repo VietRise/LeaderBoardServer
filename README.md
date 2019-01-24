@@ -14,16 +14,17 @@ How to run
 --------------------
 Using CMD on Window:
 1) Edit file config.bat, edit the path of JDK according location on your computer
+(set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
 2) Open cmd, direct to folder LeaderBoardServer
 3) Use cmd for running file make.bat
-(set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
-4) Run redis: click on file run_redis.bat
-5) Run game: Use cmd and cd to folder LeaderBoardServer/run,run file run_game.bat
+5) Use cmd for running file run.bat in folder LeaderBoardServer/run
 
 Using IDE
-1) Open project with InteliJ IDEA
-2) Click build project
-3) Click Run or Debug project
+1) Edit file config.bat, edit the path of JDK according location on your computer
+(set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
+2) Open project with InteliJ IDEA
+3) Click build project
+4) Click Run or Debug project
 
 Structure Project
 --------------------
@@ -41,8 +42,10 @@ Functionality
 Service Leaderboard
 - Allow user post score
 Example: 127.0.0.1:19140/postscore?userid=100001&score=120
+Check data with UserID 100001 was changed (in folder _database/user_game_data)
 - Allow user change name
 Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
+Check data with UserID 100001 was changed (in folder _database/user_game_data)
 - Get list user at top score
 Example:127.0.0.1:19140/topuser
 
