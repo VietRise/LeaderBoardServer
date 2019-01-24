@@ -1,9 +1,16 @@
 Functionality
 -------------
 Service Leaderboard
-- Allow user post socre
+- Allow user post score
+Example: 127.0.0.1:19140/postscore?userid=100001&score=120
 - Allow user change name
+Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
 - Get list user at top score
+Example:127.0.0.1:19140/postscore?topuser
+
+***Note***:
+You can use POSTMAN application to send http request
+Postman: https://www.getpostman.com/downloads/
 
 Main features
 -------------
@@ -32,11 +39,11 @@ Using CMD on Window:
 
 Structure Project
 --------------------
-_database: this folder was generate for saving data of user
-_release_: this folder contain file jar after compiling the application
-data: Contain file config for the application
-libs: Contain libs which neccesary for the application
-out: this folder was generate automatically by IDE
-run: contain file .bat run for window os, so don't need IDE to build, compile, run the application
-src: contain source code of the application
-tools: some tools is needed when running on local environment
+* _database: this folder was generate for saving data of user
+* _release_: this folder contain file jar after compiling the application
+* data: Contain file config for the application
+* libs: Contain libs which neccesary for the application
+* out: this folder was generate automatically by IDE
+* run: contain file .bat run for window os, so don't need IDE to build, compile, run the application
+* src: contain source code of the application
+* tools: some tools is needed when running on local environment
