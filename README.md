@@ -32,10 +32,11 @@ Using IDE
 
 Using CMD on Window:
 1) Open file config.bat in folder run, edit the path of JDK according on your computer
+2) Open cmd, direct to folder LeaderBoardServer
+3) Use cmd for running file make.bat
 (set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
-2) Run redis: click on file run_redis.bat
-3) Open cmd, direct to folder LeaderBoardServer/run
-4) Run game: run_game.bat
+4) Run redis: click on file run_redis.bat
+5) Run game: Use cmd and cd to folder LeaderBoardServer/run,run file run_game.bat
 
 Structure Project
 --------------------
