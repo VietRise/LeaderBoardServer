@@ -37,7 +37,6 @@ public class GameMain
         addShutdownHook();
 
         // Cheat create 10 member
-        /*
         try {
             for (int i = 0; i < 10; i++) {
                 String userID = GlobalVariable.getNextUserID();
@@ -49,11 +48,11 @@ public class GameMain
         {
             System.out.println("DataAccess.getInstance().addUserProfile error");
         }
-        */
 
-         tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
-         udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
-         httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
+
+        // tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
+        // udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
+        // httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
 
         System.out.printf("SERVICE_STATUS_RUNNING ...");
     }
