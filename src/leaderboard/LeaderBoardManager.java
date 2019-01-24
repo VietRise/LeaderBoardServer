@@ -3,6 +3,8 @@ package leaderboard;
 import common.GlobalVariable;
 import db.RedisController;
 import redis.clients.jedis.JedisPool;
+
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -24,6 +26,7 @@ public class LeaderBoardManager
 
     private LeaderBoard lbScoreUser;
     private HashMap<Integer, Boolean> dataChanged       = new HashMap<>();
+    private List<LeaderBoardData> cachedListUser        = null;
 
     private static Runnable updateTask = new Runnable() {
         @Override
@@ -90,11 +93,12 @@ public class LeaderBoardManager
     {
         LeaderBoardType leaderBoardType = LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE;
         LeaderBoard leaderBoard = this.getLeaderBoard(leaderBoardType);
-        if (leaderBoard != null)
+        if (leaderBoard != null && isDataChanged(leaderBoardType))
         {
             List<LeaderBoardData> leaderBoardDataList = leaderBoard.leaders(1, true);
             if (leaderBoardDataList != null)
             {
+                cachedListUser = leaderBoardDataList;
                 this.setDataChanged(leaderBoardType, false);
             }
         }
@@ -104,6 +108,12 @@ public class LeaderBoardManager
     public void setDataChanged(LeaderBoardType leaderBoardType, boolean isChange)
     {
         this.dataChanged.put(leaderBoardType.ordinal(), isChange);
+    }
+
+    public boolean isDataChanged(LeaderBoardType leaderboardType)
+    {
+        Boolean b = this.dataChanged.get(leaderboardType.ordinal());
+        return (b != null && b);
     }
 
     private static final LeaderBoardManager instance = new LeaderBoardManager();

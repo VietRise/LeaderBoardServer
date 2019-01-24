@@ -1,5 +1,6 @@
 package db;
 
+import common.ConfigPath;
 import common.GlobalVariable;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;
 import redis.clients.jedis.JedisPool;
@@ -23,7 +24,7 @@ public class RedisController
     {
         try
         {
-            JsonUtils .fromFile(GlobalVariable.redis, RedisInfo.class, true);
+            JsonUtils .fromFile(ConfigPath.redis, RedisInfo.class, true);
             pool = new JedisPool(new GenericObjectPoolConfig(), RedisInfo.HOST, RedisInfo.PORT, 10_000, null, RedisInfo.DB_INDEX);
         }
         catch (Exception ex)

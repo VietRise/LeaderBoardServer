@@ -17,8 +17,6 @@ public class GlobalVariable
 
     public static ScheduledThreadPoolExecutor schThreadPool    = (ScheduledThreadPoolExecutor) Executors.newScheduledThreadPool(NUM_THREAD_PER_POOL);
 
-    public static String redis;
-
     public static class DB_FUNCTION_KEY
     {
         public static final String DB_CHECK_KEY = "Game";
