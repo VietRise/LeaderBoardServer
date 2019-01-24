@@ -78,6 +78,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                 {
                     // Response leaderboard
                     HttpTopRank.getTopUser(response, clientIp);
+                    System.out.printf("Get top user successful");
                 }
                 else if (getParams.containsKey(POST_SCORE_USER))
                 {
