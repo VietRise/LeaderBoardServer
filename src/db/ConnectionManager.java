@@ -32,8 +32,8 @@ public class ConnectionManager implements Runnable
     {
         try
         {
-            for(CBConnection connection : connectionPools.values())
-                connection.increase(GlobalVariable.DB_FUNCTION_KEY.DB_CHECK_KEY, 1, 0L);
+            // for(CBConnection connection : connectionPools.values())
+                //connection.increase(GlobalVariable.DB_FUNCTION_KEY.DB_CHECK_KEY, 1, 0L);
         }
         catch(Exception ex)
         {

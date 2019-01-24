@@ -1,8 +1,10 @@
+import common.GlobalVariable;
 import common.ServiceInfo;
 import connection.http.HttpServer;
 import connection.tcp.TcpServer;
 import connection.udp.UdpMessageHandlerInitializer;
 import connection.udp.UdpServer;
+import data.UserProfile;
 import db.DataAccess;
 import leaderboard.LeaderBoardManager;
 
@@ -34,9 +36,24 @@ public class GameMain
         initServer();
         addShutdownHook();
 
-        tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
-        udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
-        httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
+        // Cheat create 10 member
+        /*
+        try {
+            for (int i = 0; i < 10; i++) {
+                String userID = GlobalVariable.getNextUserID();
+                UserProfile userProfile = new UserProfile(userID, userID, 0);
+                DataAccess.getInstance().addUserProfile(userProfile, 0);
+            }
+        }
+        catch (Exception ex)
+        {
+            System.out.println("DataAccess.getInstance().addUserProfile error");
+        }
+        */
+
+        // tcpServer = new TcpServer(siGame.tcpIP, siGame.tcpPort);
+        // udpServer = new UdpServer(siGame.udpIP, siGame.udpPort, new UdpMessageHandlerInitializer());
+        // httpServer = new HttpServer(siGame.httpIP, siGame.httpPort);
 
         System.out.printf("SERVICE_STATUS_RUNNING ...");
     }

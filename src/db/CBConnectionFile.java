@@ -25,7 +25,7 @@ public class CBConnectionFile extends CBConnection
     	
     }
 
-    private static String s_strSavedFolder = "./../_database";
+    private static String s_strSavedFolder = "./_database";
     public static void updateSaveFolder(String strFolder)
     {
     	s_strSavedFolder = strFolder;
