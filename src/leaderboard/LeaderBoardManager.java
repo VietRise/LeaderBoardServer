@@ -17,7 +17,6 @@ public class LeaderBoardManager
         LEADERBOARD_TYPE_SCORE_USER_VALUE
     }
 
-    public static final  int PAGE_SIZE_OF_TOP_TRIBE = 50;
     public static final  int PAGE_SIZE = 100;
     private static final int MAX_RANK = 100;
     private static final int MAX_RANK_OF_TOP_USER  = 100;
@@ -74,6 +73,18 @@ public class LeaderBoardManager
         return null;
     }
 
+    public void rankMemberIn(LeaderBoardType leaderBoardType, String member, double score)
+    {
+        LeaderBoard leaderBoard = getLeaderBoard(leaderBoardType);
+        if (leaderBoard != null)
+        {
+            long oldRank = leaderBoard.rankFor(member);
+            String memberData = LeaderBoardData.getMemberData(oldRank);
+
+            leaderBoard.rankMemberIn(member, score, memberData);
+            this.setDataChanged(leaderBoardType, true);
+        }
+    }
 
     private void doCacheScoreUser() throws Exception
     {
@@ -85,11 +96,10 @@ public class LeaderBoardManager
             if (leaderBoardDataList != null)
             {
                 this.setDataChanged(leaderBoardType, false);
-
             }
         }
-
     }
+
 
     public void setDataChanged(LeaderBoardType leaderBoardType, boolean isChange)
     {

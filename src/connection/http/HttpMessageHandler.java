@@ -89,9 +89,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                         userProfile.setHighscore(score);
                         dataAccess.updateUserProfile(userID, userProfile, 0);
                         // Update leaderboard
-                        LeaderBoard leaderBoard = LeaderBoardManager.getInstance().getLeaderBoard(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE);
-                        long oldRank = leaderBoard.rankFor(userID);
-                        leaderBoard.rankMemberIn(userID, score, LeaderBoardData.getMemberData(oldRank));
+                        LeaderBoardManager.getInstance().rankMemberIn(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE, userID, score);
                     }
                 }
                 else
