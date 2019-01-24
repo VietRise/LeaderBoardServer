@@ -7,14 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4797b697-5086-4348-9266-1cdd74be84d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeaderBoardServer/db/ConnectionManager.class" afterPath="$PROJECT_DIR$/out/production/LeaderBoardServer/db/ConnectionManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$1.class" afterPath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$2.class" afterPath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$LeaderBoardType.class" afterPath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager$LeaderBoardType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager.class" afterPath="$PROJECT_DIR$/out/production/LeaderBoardServer/leaderboard/LeaderBoardManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/GlobalVariable.java" afterPath="$PROJECT_DIR$/src/common/GlobalVariable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db/RedisController.java" afterPath="$PROJECT_DIR$/src/db/RedisController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/run/config.bat" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/run/make.bat" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/config/redis_local.json" afterPath="$PROJECT_DIR$/data/config/redis_local.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/connection/http/HttpTopRank.java" afterPath="$PROJECT_DIR$/src/connection/http/HttpTopRank.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java" afterPath="$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,66 +25,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GlobalVariable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/GlobalVariable.java">
+      <file leaf-file-name="HttpMessageHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/connection/http/HttpMessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="17" column="149" lean-forward="false" selection-start-line="17" selection-start-column="149" selection-end-line="17" selection-end-column="149" />
+            <state relative-caret-position="769">
+              <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameMain.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/GameMain.java">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="240">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LeaderBoardManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java">
+      <file leaf-file-name="run.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/run.bat">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/RedisController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-              <folding>
-                <element signature="e#425#426#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#876#877#0" expanded="true" />
-                <element signature="e#903#904#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JedisPool.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/libs/jedis-2.9.0.jar!/redis/clients/jedis/JedisPool.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RedisInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/db/RedisInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -96,8 +58,18 @@
       <file leaf-file-name="redis_local.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/config/redis_local.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="db_local.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/config/db_local.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -107,27 +79,50 @@
         <entry file="file://$PROJECT_DIR$/data/config/services_local.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JsonUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/common/JsonUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LeaderBoard.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LeaderBoard.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
+            <state relative-caret-position="151">
+              <caret line="110" column="33" lean-forward="false" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="run_game.bat" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run/run_game.bat">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LeaderBoardManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+              <folding>
+                <element signature="e#2176#2177#0" expanded="true" />
+                <element signature="e#2213#2214#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpTopRank.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/connection/http/HttpTopRank.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="59" column="102" lean-forward="true" selection-start-line="59" selection-start-column="102" selection-end-line="59" selection-end-column="102" />
               <folding />
             </state>
           </provider>
@@ -144,12 +139,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>RUNNING_MODERUNNING_MODE</find>
-      <find>parse</find>
-      <find>TOOLS_CPP</find>
       <find>COMPILECOMPILE</find>
       <find>XLS_EXPORTER_LIB</find>
-      <find>DIR_TEMP</find>
       <find>DIR_TEMP_SRC</find>
       <find>DIR_TEMP_CLASS</find>
       <find>DIR_DATABASE</find>
@@ -158,7 +149,6 @@
       <find>ERRORLEVEL</find>
       <find>DATA_ERROR</find>
       <find>DIR_RELEASE_LOG</find>
-      <find>DIR_RELEASE</find>
       <find>RUN</find>
       <find>MANIFEST</find>
       <find>_CMD_</find>
@@ -174,6 +164,11 @@
       <find>doCacheScoreUser</find>
       <find>lbScoreUser</find>
       <find>_jedisPool</find>
+      <find>DIR_DATA</find>
+      <find>DIR_RELEASE</find>
+      <find>DIR_TEMP</find>
+      <find>DIR_REDIS</find>
+      <find>6380</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -210,12 +205,10 @@
         <option value="$PROJECT_DIR$/src/common/TimeUtils.java" />
         <option value="$PROJECT_DIR$/run/run.bat" />
         <option value="$PROJECT_DIR$/src/common/KeyGenerator.java" />
-        <option value="$PROJECT_DIR$/src/connection/http/HttpTopRank.java" />
         <option value="$PROJECT_DIR$/src/leaderboard/LeaderBoard.java" />
         <option value="$PROJECT_DIR$/src/data/UserProfile.java" />
         <option value="$PROJECT_DIR$/src/db/DataAccess.java" />
         <option value="$PROJECT_DIR$/src/common/ServiceInfo.java" />
-        <option value="$PROJECT_DIR$/run/config.bat" />
         <option value="$PROJECT_DIR$/run/make.bat" />
         <option value="$PROJECT_DIR$/src/common/ConfigPath.java" />
         <option value="$PROJECT_DIR$/src/common/JsonUtils.java" />
@@ -225,11 +218,15 @@
         <option value="$PROJECT_DIR$/src/connection/http/HttpMessageHandler.java" />
         <option value="$PROJECT_DIR$/src/db/CBConnectionFile.java" />
         <option value="$PROJECT_DIR$/src/db/ConnectionManager.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/GameMain.java" />
-        <option value="$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java" />
         <option value="$PROJECT_DIR$/src/common/GlobalVariable.java" />
         <option value="$PROJECT_DIR$/src/db/RedisController.java" />
+        <option value="$PROJECT_DIR$/run/config.bat" />
+        <option value="$PROJECT_DIR$/run/run_game.bat" />
+        <option value="$PROJECT_DIR$/data/config/redis_local.json" />
+        <option value="$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java" />
+        <option value="$PROJECT_DIR$/src/connection/http/HttpTopRank.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -489,28 +486,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="_database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user_game_data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeaderBoardServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LeaderBoardServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="_database" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -786,7 +761,7 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23939809" sideWeight="0.49861112" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28864568" sideWeight="0.51666665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -794,13 +769,13 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2326389" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34336525" sideWeight="0.4861111" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22430556" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28864568" sideWeight="0.48333332" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14722222" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23939809" sideWeight="0.5013889" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2735978" sideWeight="0.5013889" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -836,42 +811,6 @@
           <properties />
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>112</line>
-          <properties />
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>154</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>127</line>
-          <properties />
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>132</line>
-          <properties />
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
       </breakpoints>
       <option name="time" value="83" />
     </breakpoint-manager>
@@ -882,41 +821,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/libs/jedis-2.9.0.jar!/redis/clients/jedis/Transaction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-404">
-          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/reflect/Field.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="754" column="16" lean-forward="false" selection-start-line="754" selection-start-column="16" selection-end-line="754" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="75" column="24" lean-forward="false" selection-start-line="75" selection-start-column="24" selection-end-line="75" selection-end-column="24" />
-          <folding>
-            <element signature="e#2036#2037#0" expanded="false" />
-            <element signature="e#2063#2064#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/connection/tcp/BCMessageHandlerInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="92" lean-forward="false" selection-start-line="17" selection-start-column="92" selection-end-line="17" selection-end-column="92" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/connection/http.java" />
     <entry file="jar://$PROJECT_DIR$/libs/netty-all-4.1.22.Final.jar!/io/netty/handler/codec/http/HttpUtil.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -960,22 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/run_redis.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run/run.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run/make.bat">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -1006,14 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
           <caret line="645" column="7" lean-forward="false" selection-start-line="645" selection-start-column="7" selection-end-line="645" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/connection/http/HttpTopRank.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1108,14 +988,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/connection/http/HttpMessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="823">
-          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/config/configPaths.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1128,14 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config/db_local.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1177,8 +1041,8 @@
         <state relative-caret-position="314">
           <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="35" />
           <folding>
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="false" />
+            <element signature="e#387#388#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1210,22 +1074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run/config.bat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/common/GlobalVariable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1238,22 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="112" column="11" lean-forward="false" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config/services_local.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/config/redis_local.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1279,10 +1111,10 @@
         <state relative-caret-position="190">
           <caret line="26" column="54" lean-forward="false" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
           <folding>
-            <element signature="e#425#426#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#903#904#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="false" />
+            <element signature="e#456#457#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#903#904#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1295,18 +1127,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java">
+    <entry file="file://$PROJECT_DIR$/run/config.bat">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="98" column="32" lean-forward="true" selection-start-line="98" selection-start-column="32" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clear.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="44" lean-forward="false" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/run_redis.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/run_game.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config/redis_local.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config/db_local.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="5" lean-forward="true" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/config/services_local.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run/run.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/connection/http/HttpTopRank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="59" column="102" lean-forward="true" selection-start-line="59" selection-start-column="102" selection-end-line="59" selection-end-column="102" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="136" column="32" lean-forward="true" selection-start-line="136" selection-start-column="32" selection-end-line="136" selection-end-column="32" />
+        <state relative-caret-position="151">
+          <caret line="110" column="33" lean-forward="false" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leaderboard/LeaderBoardManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="45" column="23" lean-forward="true" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
+          <folding>
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2213#2214#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/connection/http/HttpMessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="105" column="23" lean-forward="true" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
           <folding />
         </state>
       </provider>

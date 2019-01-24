@@ -1,4 +1,4 @@
-set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131"
+set JDK_DIR="C:\Program Files\Java\jdk1.8.0_191"
 
 set PRJ_NAME=LeaderBoardServer
 set PRJ_HOME=%cd%
@@ -6,13 +6,18 @@ set JAVAC=%JDK_DIR%\bin\javac
 set JAVA=%JDK_DIR%\bin\java
 set JAR=%JDK_DIR%\bin\jar
 set DIR_TOOL=%PRJ_HOME%\tools
+set DIR_DATA=%PRJ_HOME%\data
 set DIR_SRC=%PRJ_HOME%\src
+set DIR_CLASS=%PRJ_HOME%\class
 set DIR_BIN=%PRJ_HOME%\bin
 set DIR_LIB=%PRJ_HOME%\libs
 set DIR_REDIS=%DIR_TOOL%\Redis-x64-3.2.100
 set DIR_DATABASE=%PRJ_HOME%\_database
 set DIR_RELEASE=%PRJ_HOME%\_release_
 set DIR_RELEASE_LOG=%DIR_RELEASE%\_log
+set DIR_TEMP=%PRJ_HOME%\_temp_
+set DIR_TEMP_SRC=%DIR_TEMP%\1_src
+set DIR_TEMP_CLASS=%DIR_TEMP%\2_class
 
 set BUILD_VERSION=0.0.1
 set JAR_NAME=%PRJ_NAME%-%BUILD_VERSION%

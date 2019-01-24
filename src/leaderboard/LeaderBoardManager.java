@@ -66,6 +66,11 @@ public class LeaderBoardManager
         System.out.println("------ LEADERBOARD STATUS STOPPED --------");
     }
 
+    public List<LeaderBoardData> getCachedListUser()
+    {
+        return cachedListUser;
+    }
+
     public LeaderBoard getLeaderBoard(LeaderBoardType leaderboardType)
     {
         switch (leaderboardType)

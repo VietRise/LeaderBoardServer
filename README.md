@@ -1,3 +1,10 @@
+Functionality
+-------------
+Service Leaderboard
+- Allow user post socre
+- Allow user change name
+- Get list user at top score
+
 Main features
 -------------
    * Language: Java
@@ -6,7 +13,6 @@ Main features
 
 Build & Runtime Requirements
 ------------------
-
 * Mac OS X 10.7+, InteliJ IDEA 2017.1.2
 * Java 8
 
@@ -20,7 +26,9 @@ Using IDE
 Using CMD on Window:
 1) Open file config.bat in folder run, edit the path of JDK according on your computer
 (set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
-2) Click file run.bat
+2) Run redis: click on file run_redis.bat
+3) Open cmd, direct to folder LeaderBoardServer/run
+4) Run game: run_game.bat
 
 Structure Project
 --------------------

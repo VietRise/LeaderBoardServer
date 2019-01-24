@@ -9,6 +9,7 @@ rem echo Config...
 call config.bat %1 %2
 
 if "%1"=="src" goto COMPILE
+if "%1"=="data" goto MAKE_DATA
 
 :CLEAN_DIR
 echo.
@@ -21,6 +22,9 @@ echo.
 echo Create folder...
 if not exist %DIR_RELEASE% md %DIR_RELEASE%
 if not exist %DIR_RELEASE_LOG% md %DIR_RELEASE_LOG%
+if not exist %DIR_TEMP% md %DIR_TEMP%
+if not exist %DIR_TEMP_SRC% md %DIR_TEMP_SRC%
+if not exist %DIR_TEMP_CLASS% md %DIR_TEMP_CLASS%
 if not exist %DIR_DATABASE% md %DIR_DATABASE%
 
 if ERRORLEVEL 1 goto DATA_ERROR
@@ -39,8 +43,8 @@ if "%2" == "" (
 REM copy %DIR_DATA%\log\%PLATFORM_DIR% %DIR_DATA%\config /Y >nul
 xcopy %DIR_DATA%\config %DIR_RELEASE%\data\config\ /Y /S /E >nul
 REM xcopy %DIR_DATA%\xls %DIR_RELEASE%\data\xls\ /Y /S /E >nul
-xcopy %DIR_DATA%\json %DIR_RELEASE%\data\json\ /Y /S /E >nul
-xcopy %DIR_DATA%\geoip %DIR_RELEASE%\data\geoip\ /Y /S /E >nul
+REM xcopy %DIR_DATA%\json %DIR_RELEASE%\data\json\ /Y /S /E >nul
+REM xcopy %DIR_DATA%\geoip %DIR_RELEASE%\data\geoip\ /Y /S /E >nul
 if "%1"=="data" goto END
 
 

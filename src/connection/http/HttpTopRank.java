@@ -57,8 +57,7 @@ public class HttpTopRank
             if(second - loadAt >= RELOAD_INTERVAL)
             {
                 loadAt = second;
-                LeaderBoard leaderBoard = LeaderBoardManager.getInstance().getLeaderBoard(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE);
-                List<LeaderBoardData> leaderBoardDataList = leaderBoard.leaders(1, false);
+                List<LeaderBoardData> leaderBoardDataList = LeaderBoardManager.getInstance().getCachedListUser();
                 if (leaderBoardDataList != null)
                 {
                     try
