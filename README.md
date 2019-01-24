@@ -32,7 +32,10 @@ Functionality
 -------------
 Service Leaderboard
 - Allow user post score
-Example: 127.0.0.1:19140/postscore?userid=100001&score=120
+Example:
+127.0.0.1:19140/postscore?userid=100001&score=120
+127.0.0.1:19140/postscore?userid=100002&score=80
+127.0.0.1:19140/postscore?userid=100004&score=150
 Check data with UserID 100001 was changed (in folder _database/user_game_data)
 - Allow user change name
 Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
