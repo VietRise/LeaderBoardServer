@@ -13,7 +13,7 @@ Build & Runtime Requirements
 How to run
 --------------------
 Using CMD on Window:
-1) Open file config.bat in folder run, edit the path of JDK according location on your computer
+1) Edit file config.bat, edit the path of JDK according location on your computer
 2) Open cmd, direct to folder LeaderBoardServer
 3) Use cmd for running file make.bat
 (set JDK_DIR="C:\Program Files\Java\jdk1.8.0_131")
