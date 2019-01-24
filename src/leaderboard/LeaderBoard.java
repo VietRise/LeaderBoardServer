@@ -107,6 +107,60 @@ public class LeaderBoard
         return this.rankForIn(_leaderboardName, member);
     }
 
+    // Update leaderboard
+    public void updateMemberData(String member, String memberData)
+    {
+        this.updateMemberDataIn(_leaderboardName, member, memberData);
+    }
+
+    private void updateMemberDataIn(String leaderboardName, String member, String memberData)
+    {
+        Jedis jedis = null;
+        try
+        {
+            jedis = _jedisPool.getResource();
+            jedis.hset(this.memberDataKey(leaderboardName), member, memberData);
+        }
+        catch (Exception ex)
+        {
+            System.out.println(ex.getMessage());
+        }
+        finally
+        {
+            returnResource(jedis);
+        }
+    }
+
+    // Remove
+    public Long removeMembersOutsideRank(long rank)
+    {
+        return this.removeMembersOutsideRankIn(_leaderboardName, rank);
+    }
+
+    private Long removeMembersOutsideRankIn(String leaderboardName, long rank)
+    {
+        Jedis jedis = null;
+        try
+        {
+            jedis = _jedisPool.getResource();
+            if (_order == Order.DESC)
+            {
+                rank = -(rank) - 1;
+                return jedis.zremrangeByRank(leaderboardName, 0, rank);
+            }
+            return jedis.zremrangeByRank(leaderboardName, rank, -1);
+        }
+        catch (Exception ex)
+        {
+            System.out.println(ex.getMessage());
+        }
+        finally
+        {
+            returnResource(jedis);
+        }
+        return null;
+    }
+
     // Get leaderboard top user
     public List<LeaderBoardData> leaders(int currentPage, boolean withMemberData)
     {

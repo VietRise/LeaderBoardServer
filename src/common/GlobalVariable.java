@@ -5,6 +5,7 @@ import db.DataAccess;
 import java.util.HashMap;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * Created by MacBook on 1/23/19.
@@ -15,6 +16,7 @@ public class GlobalVariable
     private static final int    NUM_CORE                            = Runtime.getRuntime().availableProcessors();
     private static final int    NUM_THREAD_PER_POOL                 = Runtime.getRuntime().availableProcessors() / 2;
 
+    public static ThreadPoolExecutor exeThreadPool    = (ThreadPoolExecutor) Executors.newFixedThreadPool(NUM_THREAD_PER_POOL);
     public static ScheduledThreadPoolExecutor schThreadPool    = (ScheduledThreadPoolExecutor) Executors.newScheduledThreadPool(NUM_THREAD_PER_POOL);
 
     public static class DB_FUNCTION_KEY

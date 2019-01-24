@@ -96,7 +96,7 @@ public class HttpMessageHandler extends SimpleChannelInboundHandler<Object>
                             userProfile.setHighscore(score);
                             dataAccess.updateUserProfile(userID, userProfile, 0);
                             // Update leaderboard
-                            LeaderBoardManager.getInstance().rankMemberIn(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE, userID, score);
+                            LeaderBoardManager.getInstance().rankMember(LeaderBoardManager.LeaderBoardType.LEADERBOARD_TYPE_SCORE_USER_VALUE, userID, score);
                             System.out.printf("Post score user successful");
                             // Response data
                             result = SUCCESS;
