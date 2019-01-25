@@ -1,12 +1,12 @@
 Main features
 -------------
-   * Language: Java
+   * Programming Language: Java
    * Network: Netty
    * Database: File, Redis
 
 Build & Runtime Requirements
 ------------------
-* Window
+* Window OS
 * InteliJ IDEA 2017.1.2
 * Java 8
 
