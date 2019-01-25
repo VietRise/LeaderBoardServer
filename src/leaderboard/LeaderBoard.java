@@ -21,8 +21,6 @@ public class LeaderBoard
     }
 
     private static final int                    DEFAULT_PAGE_SIZE             = 25;
-    private static final String                 DEFAULT_REDIS_HOST            = "127.0.0.1";
-    private static final int                    DEFAULT_REDIS_PORT            = 6379;
     private static final String                 DEFAULT_MEMBER_DATA_NAMESPACE = "MemberData";
     private static final boolean                DEFAULT_GLOBAL_MEMBER_DATA    = false;
     private static final List<LeaderBoardData>  EMPTY_LEADER_DATA             = Collections.emptyList();
