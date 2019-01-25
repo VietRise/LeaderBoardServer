@@ -46,8 +46,8 @@ Example: 127.0.0.1:19140/updateuser?userid=100001&name=vietrise
 Check data with UserID 100001 was changed (in folder _release_/_database/user_game_data)
 ```
 
-```
 - Get list user at top score
+```
 Example: 127.0.0.1:19140/topuser
 ```
 
