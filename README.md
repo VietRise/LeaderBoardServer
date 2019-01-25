@@ -52,8 +52,9 @@ Example: 127.0.0.1:19140/topuser
 ```
 
 ***Note***:
-You can use POSTMAN application to send http request
+- Use POSTMAN application to send http request
 [Postman](https://www.getpostman.com/downloads/)
+- Use some browser to send http request (Chrome, Firefox, ...)
 
 Structure Project
 --------------------
